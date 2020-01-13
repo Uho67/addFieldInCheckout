@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--
+ Copyright © Vaimo Group. All rights reserved.
+ See LICENSE.txt for license details.
+-->
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="Vaimo_ClemondoMarkGoods_Plugin_LayoutProcessor"
+                type="Vaimo\ClemondoMarkGoods\Plugin\LayoutProcessorPlugin"/>
+    </type>
+    <type name="Magento\Checkout\Model\PaymentInformationManagement">
+        <plugin name="save-reference-customer"
+                type="Vaimo\ClemondoMarkGoods\Plugin\PaymentInformationManagementPlugin"/>
+    </type>
+</config>
